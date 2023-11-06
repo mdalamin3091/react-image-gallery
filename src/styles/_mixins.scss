@@ -1,0 +1,35 @@
+// grid mixin
+@mixin grid(
+  $alignItems: null,
+  $justifyContent: null,
+  $rows: null,
+  $columns: null,
+  $gap: null,
+  $row-gap: null,
+  $column-gap: null
+) {
+  display: grid;
+  gap: $gap;
+  row-gap: $row-gap;
+  column-gap: $column-gap;
+  grid-template-rows: $rows;
+  grid-template-columns: $columns;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+// display flex mixin
+@mixin flex(
+  $alignItems: null,
+  $justifyContent: null,
+  $direction: null,
+  $wrap: null,
+  $gap: null
+) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
